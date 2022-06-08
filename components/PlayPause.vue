@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="player">
         <img class="PlayPauseButton" :src="source" alt="playpause">
     </div>
 </template>
