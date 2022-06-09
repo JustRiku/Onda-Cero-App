@@ -6,30 +6,30 @@
         <section class="white">
         <h2>Podcast</h2>
         <div class="podcasts">
-            <podcast class="show item" @click="playActive = !playActive" :source="'/jrl-1.png'" v-for="(item, page1) in 8" :key="page1" />
+            <podcast @click="playActive = !playActive" :source="'/jrl-1.png'" class="item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         <h2>Programas</h2>
         <div class="cards">
-            <card class="card-item show" @click="playActive = !playActive" v-for="(item, page1) in 8" :key="page1" />
+            <card @click="playActive = !playActive" class="card-item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         </section>
         <section class="cat-section">
         <h2>CATEGORÍAS</h2>
         <h3>Deportes</h3>
         <div class="categorias">
-            <category-card class="card-item show" @click="playActive = !playActive" v-for="(item, page1) in 8" :key="page1" />
+            <category-card @click="playActive = !playActive" class="cat-item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         <h3>Noticias</h3>
         <div class="categorias">
-            <category-card class="card-item show" @click="playActive = !playActive" v-for="(item, page1) in 8" :key="page1" />
+            <category-card @click="playActive = !playActive" class="cat-item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         <h3>Actualidad</h3>
         <div class="categorias">
-            <category-card class="card-item show" @click="playActive = !playActive" v-for="(item, page1) in 8" :key="page1" />
+            <category-card @click="playActive = !playActive" class="cat-item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         <h3>Programas para probar</h3>
         <div class="categorias">
-            <category-card class="card-item show" @click="playActive = !playActive" v-for="(item, page1) in 8" :key="page1" />
+            <category-card @click="playActive = !playActive" class="cat-item" v-for="(item, page1) in 8" :key="page1" />
         </div>
         </section>
     </main>
