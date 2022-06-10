@@ -3,6 +3,7 @@
     <nav-bar class="nav-bar"/>
     <hero class="hero"/>
     <main class="main-page1">
+        <music-player />
         <section class="white">
         <h2>Podcast</h2>
         <div class="podcasts">
@@ -49,9 +50,10 @@ import Podcast from '../components/Podcast.vue';
 import Card from '../components/Card.vue';
 import CategoryCard from '../components/CategoryCard.vue';
 import PlayPause from '../components/PlayPause.vue';
+import MusicPlayer from '../components/MusicPlayer.vue';
 export default{
     name: "Page1",
-    components: { Hero, NavBar, LogoImageVue, Podcast, Card, CategoryCard, PlayPause },
+    components: { Hero, NavBar, LogoImageVue, Podcast, Card, CategoryCard, PlayPause, MusicPlayer },
     data() {
         return {
             playActive: false

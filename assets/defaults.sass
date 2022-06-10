@@ -303,6 +303,7 @@ button
         font-size: 24px
         font-weight: 500
 
+// .show
 .player
     width: 100%
     color: #fff
@@ -314,4 +315,77 @@ button
     z-index: 200
     position: fixed
     bottom: 0
-// .show
+    padding: 10px
+    .song_title
+        color: #fff
+        font-weight: 600
+    .song_author
+        color: gray
+        font-size: .9em
+    img
+        margin: 10px
+    .controls
+        display: flex
+        padding: 20px
+        .btn_control
+            padding: 20px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: #ddd
+            margin: 0
+            &.playplause
+                background: #48ab34
+                color: #fff
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 70%
+                    height: 100%
+                    object-fit: cover
+                &:hover
+                    background-color: #2a661e
+            &.repeat
+                &.active
+                    background: #48ab34
+                    color: #fff
+                &:hover
+                    background-color: #2a661e
+            &:disabled
+                color: gray
+    .progress_btn_pos
+        display: flex
+        justify-content: flex-end
+        height: 1em
+        border-radius: 20px
+        .progress_btn
+            width: 20px
+            height: 20px
+            border-radius: 40px
+            background: #fff
+            border: 1px solid #ccc
+    .times
+        display: flex
+        justify-content: space-between
+        font-size: .8em
+@media screen and (max-width: 800px) 
+    .main-page2
+        .profile
+            .profile-name
+                font-size: 32px
+                margin-bottom: 20px
+            .profile-pic
+                width: 100px
+                height: 100px
+                padding: 5px
+                img
+                    width: 50%
+    .list-bar
+        li
+            font-size: 16px
+    .nav-bar
+        font-size: 12px
+    .logo-image
+        width: 30px
+
